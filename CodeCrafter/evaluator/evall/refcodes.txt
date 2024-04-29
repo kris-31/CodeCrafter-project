@@ -1,45 +1,50 @@
-1. num1 = 5
-   num2 = 3
-   sum = num1 + num2
-   print("The sum of {0} and {1} is {2}".format(num1, num2, sum))
+# Code Snippet 1: Calculate the sum of two numbers
+num1 = 5
+num2 = 3
+total = num1 + num2  # Avoid using 'sum' as a variable name, as it's a built-in function
+print("The sum of {} and {} is {}".format(num1, num2, total))
 
-2. def factorial(n):
-       if n == 0:
-           return 1
-       else:
-           return n * factorial(n-1)
+# Code Snippet 2: Calculate the factorial of a number
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
-   num = 5
-   print("The factorial of", num, "is", factorial(num))
+num = 5
+print("The factorial of", num, "is", factorial(num))
 
-3. def is_prime(n):
-       if n <= 1:
-           return False
-       elif n <= 3:
-           return True
-       elif n % 2 == 0 or n % 3 == 0:
-           return False
-       i = 5
-       while i * i <= n:
-           if n % i == 0 or n % (i + 2) == 0:
-               return False
-           i += 6
-       return True
+# Code Snippet 3: Check if a number is prime
+def is_prime(n):
+    if n <= 1:
+        return False
+    elif n <= 3:
+        return True
+    elif n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
 
-   num = 11
-   if is_prime(num):
-       print(num, "is a prime number")
-   else:
-       print(num, "is not a prime number")
+num = 11
+if is_prime(num):
+    print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
 
-4. def find_largest(lst):
-       return max(lst)
+# Code Snippet 4: Find the largest element in a list
+def find_largest(lst):
+    return max(lst)
 
-   numbers = [10, 20, 4, 45, 99]
-   print("The largest element in the list is:", find_largest(numbers))
+numbers = [10, 20, 4, 45, 99]
+print("The largest element in the list is:", find_largest(numbers))
 
-5. def reverse_string(s):
-       return s[::-1]
+# Code Snippet 5: Reverse a string
+def reverse_string(s):
+    return s[::-1]
 
-   string = "Hello, World!"
-   print("The reversed string is:", reverse_string(string))
+string = "Hello, World!"
+print("The reversed string is:", reverse_string(string))
